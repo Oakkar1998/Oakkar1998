@@ -1,0 +1,134 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3eee8;
+}
+
+.profile-card{
+    /* Photo & text-data */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 370px;
+    width: 100%;
+    background: #f7f8f7ec;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(221, 27, 27, 0.1);
+    position: relative;
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    background-color: #17153B;
+    border-radius: 24px 24px 0 0;
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #C8ACD6;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #080808;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2E236C;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+
+}
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button{
+    border-radius: 30px;
+    border: none;
+    color: #f3f2fa;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #2E236C;
+    margin: 0 10px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.buttons .button:hover{
+    background-color: #C8ACD6;
+}
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #020101cc;
+    padding: 0 20px;
+    border-right:  2px solid #b3b3b6;
+}
+.data i {
+    font-size: 16px;
+    margin-right: 6px;
+}
+.data:last-child{
+    border-right: none;
+
+}
